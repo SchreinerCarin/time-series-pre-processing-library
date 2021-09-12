@@ -1,0 +1,7 @@
+export function getExponentialFilterData (length, getY, setY, percentage) {
+    let lastY = getY(0);
+    for (let i = 1; i < length - 1; i++){
+        lastY = (percentage * getY(i)) + ((1-percentage) * lastY);
+        setY(lastY, i)
+    }
+}
