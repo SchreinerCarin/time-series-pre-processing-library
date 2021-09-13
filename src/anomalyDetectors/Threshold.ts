@@ -1,4 +1,4 @@
-import {getValueByIndexFunction, setValueByIndex, errorHandler} from "../types";
+import {errorHandler, getValueByIndexFunction, setValueByIndex} from "../../index";
 
 export function getThresholdData (length: number,
                                   getY: getValueByIndexFunction,

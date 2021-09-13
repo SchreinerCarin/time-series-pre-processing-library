@@ -1,5 +1,5 @@
 import {calculateMean, getStandardDeviation} from "../utils/mathUtils";
-import {errorHandler, getValueByIndexFunction, setValueByIndex} from "../types";
+import {errorHandler, getValueByIndexFunction, setValueByIndex} from "../../index";
 
 export function getSigmaRuleData (length: number,
                                   getY: getValueByIndexFunction,

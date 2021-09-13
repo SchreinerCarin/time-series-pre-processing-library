@@ -1,4 +1,4 @@
-import {getValueByIndexFunction, setValueByIndex} from "../types";
+import {getValueByIndexFunction, setValueByIndex} from "../../index";
 
 export function getMovingMeanData (length: number,
                                    getY: getValueByIndexFunction,

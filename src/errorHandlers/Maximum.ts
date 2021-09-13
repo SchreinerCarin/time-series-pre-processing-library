@@ -1,4 +1,4 @@
-import {getValueByIndexFunction} from "../types";
+import {getValueByIndexFunction} from "../../index";
 
 export function getMaximum (length: number, getY: getValueByIndexFunction, index: number): number {
     let maxValue = getY(0);

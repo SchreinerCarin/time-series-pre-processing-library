@@ -1,4 +1,4 @@
-import {getValueByIndexFunction} from "../types";
+import {getValueByIndexFunction} from "../../index";
 
 export function getMedian (length: number, getY: getValueByIndexFunction, index: number): number {
     let middle = (length / 2);

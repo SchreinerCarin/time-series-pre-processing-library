@@ -1,4 +1,4 @@
-import {getValueByIndexFunction} from "../types";
+import {getValueByIndexFunction} from "../../index";
 
 export function getMinimum (length: number, getY: getValueByIndexFunction, index: number): number {
     let minValue = getY(0);

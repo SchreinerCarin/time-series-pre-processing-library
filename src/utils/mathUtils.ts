@@ -1,4 +1,4 @@
-import {getValueByIndexFunction} from "../types";
+import {getValueByIndexFunction} from "../../index";
 
 export function calculateMean (length: number, getY: getValueByIndexFunction): number {
     let mean = 0;
