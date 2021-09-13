@@ -9,6 +9,7 @@
   },
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "../time-series-pre-processing-ibrary-example/src/example"
   ]
 }

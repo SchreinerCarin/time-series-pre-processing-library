@@ -1,26 +1,15 @@
-import {getMovingMeanData} from "./src/filters/MovingMean";
-import {getExponentialFilterData} from "./src/filters/ExponentialFilter";
-import {getSigmaRuleData} from "./src/anomalyDetectors/SigmaRule";
-import {getThresholdData} from "./src/anomalyDetectors/Threshold";
-import {getFaulty} from "./src/errorHandlers/Faulty";
-import {linearInterpolation} from "./src/errorHandlers/LinearInterpolation";
-import {getMaximum} from "./src/errorHandlers/Maximum";
-import {getMean} from "./src/errorHandlers/Mean";
-import {getMedian} from "./src/errorHandlers/Median";
-import {getMinimum} from "./src/errorHandlers/Minimum";
+export {getMovingMeanData} from "./src/filters/MovingMean";
+export {getExponentialFilterData} from "./src/filters/ExponentialFilter";
 
-module.exports.movingMean = getMovingMeanData;
-module.exports.exponentialFilter = getExponentialFilterData;
+export {getSigmaRuleData} from "./src/anomalyDetectors/SigmaRule";
+export {getThresholdData} from "./src/anomalyDetectors/Threshold";
 
-module.exports.sigmaRule = getSigmaRuleData;
-module.exports.threshold = getThresholdData;
-
-module.exports.faulty = getFaulty;
-module.exports.linearInterpolation = linearInterpolation;
-module.exports.maximum = getMaximum;
-module.exports.mean = getMean;
-module.exports.median = getMedian;
-module.exports.minimum = getMinimum;
+export {getFaulty} from "./src/errorHandlers/Faulty";
+export {linearInterpolation} from "./src/errorHandlers/LinearInterpolation";
+export {getMaximum} from "./src/errorHandlers/Maximum";
+export {getMean} from "./src/errorHandlers/Mean";
+export {getMedian} from "./src/errorHandlers/Median";
+export {getMinimum} from "./src/errorHandlers/Minimum";
 
 export type getValueByIndexFunction = (i: number) => number
 export type setValueByIndex = (newValue: number, i: number) => void
