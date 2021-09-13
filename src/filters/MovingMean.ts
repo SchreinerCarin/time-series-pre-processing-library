@@ -1,4 +1,9 @@
-export function getMovingMeanData (length, getY, setY, width) {
+import {getValueByIndexFunction, setValueByIndex} from "../types";
+
+export function getMovingMeanData (length: number,
+                                   getY: getValueByIndexFunction,
+                                   setY: setValueByIndex,
+                                   width: number): void {
     let prevNodes = Math.ceil((width-1)/2);
     let followingNodes = Math.floor((width-1)/2);
     for (let i = prevNodes; i < length-followingNodes; i++){

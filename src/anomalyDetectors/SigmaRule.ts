@@ -1,8 +1,10 @@
 import {calculateMean, getStandardDeviation} from "../utils/mathUtils";
+import {errorHandler, getValueByIndexFunction, setValueByIndex} from "../types";
 
-//TODO ERROR HANDLING ERRORHANDLER
-//TODO did I got everything?
-export function getSigmaRuleData (length, getY, setY, errorHandler) {
+export function getSigmaRuleData (length: number,
+                                  getY: getValueByIndexFunction,
+                                  setY: setValueByIndex,
+                                  errorHandler?: errorHandler): void {
     let mean = calculateMean(length, getY);
     let standardDeviation = getStandardDeviation(length, getY, mean)
 
