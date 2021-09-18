@@ -10,7 +10,7 @@ export function getSigmaRuleData (length: number,
 
     for (let i = 1; i < length-1; i++){
         let threshold = (getY(i) - mean) / standardDeviation;
-        if(threshold > 2){
+        if(Math.abs(threshold) > 2){
             if(typeof errorHandler != 'undefined'){
                 let replacementValue = errorHandler(length, getY, i);
                 setY(replacementValue, i);
